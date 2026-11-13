@@ -12,31 +12,36 @@ class Game < Gosu::Window
     @lander = Gosu::Image.new("media/img/lander.png")
     #@plate = Gosu::Image.new("media/img/plate.png")
 
-    @i = 0
+    @lh =
+    @lw = 
     @lx = @width/2
     @ly = @height/2 + @height/5
+
     @px = @width/2
     @py = @height-(@height/8)
+    
     @bx = 0
     @by = 0
+    
     @angle = 0
     @rot = 0.05
+    @i = (1/12)*@m*(@lw*@lh)
+
     @font = Gosu::Font.new(24)
+    @Tnet = 0
   end
 
   def update
-    #@i %= 60
-    @i += 1
     if @angle >= 360
       @angle = 0 
     end
     
     if @angle > 0 && @angle < 180
-      @angle += (@rot*@i)/@angle
+      @angle += @Tnet/@i
     end 
 
     if @angle < 360 && @angle > 180
-      @angle -= (@rot*@i)/@angle
+      @angle -= @Tnet/@i
     end
 
     if Gosu.button_down?(Gosu::KB_D)

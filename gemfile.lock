@@ -1,0 +1,27 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ffi (1.17.4-x64-mingw-ucrt)
+    gosu (1.5.0)
+      ffi (~> 1.12)
+    rufus-lua (1.1.5)
+      ffi (~> 1.9)
+    rufus-lua-win (5.1.5)
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  gosu
+  rufus-lua
+  rufus-lua-win
+
+CHECKSUMS
+  bundler (4.0.12) sha256=7f8b757d28dfb636e7b24fba2344ac6dd13b5b24f4b46d62573d483f211825ac
+  ffi (1.17.4-x64-mingw-ucrt) sha256=f6ff9618cfccc494138bddade27aa06c74c6c7bc367a1ea1103d80c2fcb9ed35
+  gosu (1.5.0) sha256=17df6b57d50d47f3253cc8d91cf9b1dc2ffa7864bc50b6a1f5f2feea6d74c710
+  rufus-lua (1.1.5) sha256=5bdf3a7bcade90f8f253738f3f68acb4f02832bde50256ffb322d6e3549e7823
+  rufus-lua-win (5.1.5) sha256=0a5c981e37d42211140fbe203c3970bf19cc8b4daa9740a4f0eb2a6cdbdd4c91
+
+BUNDLED WITH
+  4.0.12

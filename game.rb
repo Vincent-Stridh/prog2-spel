@@ -139,7 +139,7 @@ class Game < Gosu::Window
     @font.draw_text("X= #{@lx.round(2)}", 10, @base+@mult*6, 10)
     @font.draw_text("Y= #{@ly.round(2)}", 10, @base+@mult*7, 10)
     @font.draw_text("", 10, @base+@mult*8, 10)
-    @font.draw_text("Lander position:", 10, @base+@mult*9, 10)
+    @font.draw_text("Landing plate position:", 10, @base+@mult*9, 10)
     @font.draw_text("X= #{@px.round(2)}", 10, @base+@mult*10, 10)
     @font.draw_text("Y= #{@py.round(2)}", 10, @base+@mult*11, 10)
     @font.draw_text("Distancer_x: #{@distance_x.round(2)}", 10, @base+@mult*12, 10)

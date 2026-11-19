@@ -1,0 +1,5 @@
+source "https://rubygems.org"
+
+gem "gosu"
+gem 'rufus-lua-win' if Gem.win_platform?
+gem 'rufus-lua'

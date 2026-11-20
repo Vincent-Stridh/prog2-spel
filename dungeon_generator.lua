@@ -60,8 +60,8 @@ function new_dungeon()
  -- set up generation
  init_generation(get_random_params())
  
- -- generate 8-24 rooms
- generate(8+rnd(16))
+ -- generate 15-31 rooms
+ generate(15+rnd(16))
 end
 
 function get_base_params()

@@ -10,8 +10,12 @@ end
 
 class Game < Gosu::Window
   def initialize
+    super(800,600)
     @lua = Rufus::Lua::State.new
     @lua.eval(File.read('dungeon_generator.lua'))
+  
+    lua_table = @lua.eval("return generate_map(16, 16)")
+    @map = lua_table.to_a.map { |row| row.to_a }
   end
 
   def update
